@@ -1,0 +1,17 @@
+<div class="class">
+  <h2>Two way Binding</h2>
+  <form>
+    <input type="text"
+    [(ngModel)]="name"
+    name="name"
+    placeholder="Digite seu nome.">
+    <input type="submit" value="Enviar" (click)="insertInNamesArray()">
+  </form>
+  <h2>Names: </h2>
+  <div *ngIf="names !== []">
+    <ul>
+      <li *ngFor="let nome of names">{{nome}}</li>
+    </ul>
+  </div>
+  <button (click)="clear()">Limpar</button>
+</div>

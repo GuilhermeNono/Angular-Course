@@ -1,0 +1,7 @@
+<div class="class">
+  <div *ngIf=" istrue">Estamos mostrando isso porque foi permitido</div>
+  <div *ngIf="name === 'Guilherme'; else nameNotFound">O usuario tem o nome de {{name}}</div>
+  <ng-template #nameNotFound>
+    <h2>Usuario não encontrado.</h2>
+  </ng-template>
+</div>

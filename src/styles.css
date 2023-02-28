@@ -1,1 +1,15 @@
 /* You can add global styles to this file, and also import other style files */
+*{
+  margin-left: 5px;
+  color: blue;
+}
+
+.class{
+  border-bottom: 1px solid red;
+  padding: 2em;
+  margin-bottom: 1em;
+}
+
+body{
+  padding-bottom: 500px;
+}
